@@ -40,3 +40,4 @@ public class PracticeTest extends BaseTest {
         Assert.assertEquals(itemsNames, expectedSortedNames);
     }
 }
+// Trying to protect main
