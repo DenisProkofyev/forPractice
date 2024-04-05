@@ -40,4 +40,3 @@ public class PracticeTest extends BaseTest {
         Assert.assertEquals(itemsNames, expectedSortedNames);
     }
 }
-//Add a comment
