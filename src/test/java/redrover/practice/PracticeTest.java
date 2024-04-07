@@ -40,6 +40,17 @@ public class PracticeTest extends BaseTest {
 
         Assert.assertEquals(itemsNames, expectedSortedNames);
     }
+    @Test
+    public void testSauceDemoLogin(){
+        getDriver().get("https://www.saucedemo.com/");
+        getDriver().findElement(By.id("user-name")).sendKeys("problem_user");
+        getDriver().findElement(By.id("password")).sendKeys("secret_sauce");
+        getDriver().findElement(By.id("login-button")).click();
+
+        String intName = getDriver().findElement(By.id("item_5_title_link")).getText();
+        Assert.assertEquals(intName, "Sauce Labs Fleece Jacket");
+    }
+}
 
 // Trying to protect main
 
