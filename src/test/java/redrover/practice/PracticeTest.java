@@ -50,7 +50,7 @@ public class PracticeTest extends BaseTest {
         String intName = getDriver().findElement(By.id("item_5_title_link")).getText();
         Assert.assertEquals(intName, "Sauce Labs Fleece Jacket");
     }
-}
+
 
 // Trying to protect main
 
