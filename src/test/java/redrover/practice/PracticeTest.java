@@ -44,7 +44,7 @@ public class PracticeTest extends BaseTest {
 // Trying to protect main
 
     @Test
-    public void testSauceDemo() throws InterruptedException {
+    public void testSauceDemo() {
         getDriver().get("https://www.saucedemo.com/");
         getDriver().findElement(By.id("user-name")).sendKeys("problem_user");
         getDriver().findElement(By.id("password")).sendKeys("secret_sauce");
